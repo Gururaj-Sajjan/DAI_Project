@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage[rightcaption]{sidecap}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[a4paper, hmargin=1.0in, top=1.0in, bottom=1.0in]{geometry}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan
+}
+\titlespacing*{\section}{0pt}{1.5ex plus 0.5ex minus .2ex}{0.8ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1.2ex plus 0.4ex minus .2ex}{0.5ex plus .2ex}
+\titlespacing*{\subsubsection}{0pt}{1.0ex plus 0.3ex minus .2ex}{0.4ex plus .2ex}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Project Proposal}
+\rhead{Groundwater and Contamination}
+\cfoot{Page \thepage}
+\title{Team 21: Does Falling Groundwater Coincide with Rising Contamination?}
+\author{Gururaj Subhas Sajjan, Aumkar and Upayan}
+\date{\today}
+\begin{document}
+\maketitle
+\section{Hypothesis}
+Groundwater is a critical source of water for drinking, agriculture, and industrial activities in India. Increasing dependence on groundwater, combined with uneven rainfall and intensive extraction, has raised concerns about declining groundwater levels in many regions. However, groundwater availability is only one aspect of water security; the quality of the remaining groundwater is equally important.
+India is the world's largest user of groundwater, and falling water tables are widely reported in the north-west, west, and south. Separately, geogenic contaminants such as fluoride and arsenic, and salinity (measured by electrical conductivity), are widespread in Indian aquifers.
+A common concern is that heavy pumping may worsen water quality, either by drawing in deeper, more mineralised water or by changing redox conditions that release arsenic. However, fluoride is largely controlled by rock type, so the relationship may hold in some regions and not in others.
+Our central question is:\\
+\textbf{Do declining water tables coincide with rising fluoride, salinity (EC), and arsenic in groundwater, and does this relationship differ across hydrogeological settings?}
+\subsection{Null Hypothesis ($H_0$)}
+There is no statistically significant association between increasing depth to groundwater and changes in fluoride, arsenic, or electrical conductivity.
+\subsection{Alternative Hypothesis ($H_1$)}
+An increase in depth to groundwater (m bgl), indicating a declining water table, is associated with an increase in one or more of the groundwater contamination indicators. The relationship may differ across hydrogeological settings.
+\subsection{Sources and References}
+\begin{itemize}
+    \item \url{https://www.nature.com/articles/ngeo2791}
+    \item \url{https://www.nature.com/articles/nature08238}
+\end{itemize}
+\subsection{Programming Languages and Tools}
+\begin{itemize}
+    \item R programming language
+    \item Python Pandas
+    \item Python SciPy (statistical analysis)
+    \item Plotly (data visualisation and dashboard)
+    \item GitHub (version control)
+\end{itemize}
+\subsection{Datasets}
+\begin{itemize}
+    \item Groundwater levels:
+    \url{https://indiawris.gov.in/wris/#/groundWater}
+    \item Central Ground Water Board: Groundwater-level monitoring:
+    \url{https://cgwb.gov.in/en/ground-water-level-monitoring}
+    \item Central Ground Water Board: Groundwater quality:
+    \url{https://cgwb.gov.in/en/ground-water-quality}
+\end{itemize}
+\subsection{LLM Conversation Links}
+\begin{itemize}
+    \item \url{https://chatgpt.com/c/6accb6cc-6934-83ee-a1eb-8fe5285674b3}
+    \item \url{https://chatgpt.com/c/6accf623-36a0-83ee-8d64-f734fbed69e5}
+\end{itemize}
+\section{Logistics}
+\textbf{Updated Spreadsheet:}
+\url{https://docs.google.com/spreadsheets/d/1Pj4vhs-BgbP2kBKr_zqPncwJNplQb3gM52fITc01g-s/edit?usp=sharing}
+\subsection{Tasks}
+\begin{enumerate}
+    \item Collect and clean groundwater-quality data.
+    \item Match monitoring stations using station codes and years; reconcile district names where necessary.
+    \item Merge groundwater-level and quality datasets.
+    \item Conduct exploratory analysis and statistical tests.
+    \item Develop a Plotly dashboard and prepare the final report.
+\end{enumerate}
+\textbf{GitHub link}
+\url{https://github.com/Gururaj-Sajjan/DAI_Project}
+\end{document}
